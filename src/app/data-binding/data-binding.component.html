@@ -15,7 +15,7 @@
   <article>
     <h3>Property Binding</h3>
     <img src="{{urlImagem}}">
-    <img [src]="urlImagem"> <--Property Binding
+    <img src="urlImagem"> <--Property Binding
     
 
   </article> -->
@@ -80,7 +80,7 @@
 
 <!-- </section> -->
 
-<section class="two-way-binding">
+<!-- <section class="two-way-binding">
 
   <article>
 
@@ -88,30 +88,30 @@
 
     <div>
 
-
       <input type="text"
       [value]="nome"
       (input)="nome = $event.target.value"/>
-
-
       <input type="text"
       [ngModel]="nome"
       (ngModelChange)="nome = $event"/><br>
-      
       
       <input type="text" [(ngModel)]="pessoa.nome"/><br>
       <input type="text" [(ngModel)]="pessoa.idade"/>
       
       <p>Você digitou: {{nome}}</p>
-      
-
-      
-      
 
     </div>
+  </article>
+</section> -->
+
+<section class="input-output-propertis">
+
+  <article>
+
+    <h3> Input/output Properties</h3>
+    <app-curso [nome]="nomeDoCurso"></app-curso>
 
   </article>
-
 
 
 </section>

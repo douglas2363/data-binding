@@ -13,6 +13,7 @@ export class DataBindingComponent implements OnInit {
   cursoAngular: boolean = true;
   valortAtual: string = "";
   valorSalvo:string="";
+  nomeDoCurso:string = 'Angular';
 
   nome: string = 'abc';
 
@@ -22,6 +23,7 @@ export class DataBindingComponent implements OnInit {
     idade:20
 
   }
+  
 
   getCurtirCurso() {
 
