@@ -14,6 +14,7 @@ export class DataBindingComponent implements OnInit {
   valortAtual: string = "";
   valorSalvo:string="";
   nomeDoCurso:string = 'Angular';
+  valorInicial=15;
 
   nome: string = 'abc';
 
@@ -24,11 +25,9 @@ export class DataBindingComponent implements OnInit {
 
   }
   
-
   getCurtirCurso() {
 
     return true;
-
   }
 
   getValor() {
@@ -37,7 +36,6 @@ export class DataBindingComponent implements OnInit {
 
   botaoClicado() {
     alert('Botão clicado');
-
   }
 
   onkeyUp(evento: KeyboardEvent) {
@@ -50,9 +48,15 @@ export class DataBindingComponent implements OnInit {
   salvarValor(valor){
     
     this.valorSalvo = valor;
+  }
+
+  onMudouValor(evento){
+    console.log(evento.novoValor);
+  }
+  
+  constructor() { 
 
   }
-  constructor() { }
 
   ngOnInit(): void {
   }
