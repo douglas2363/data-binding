@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "data-binding"
+    }
+  },
+  "defaultProject": "data-binding",
+  "cli": {
+    "analytics": "968bb91c-a253-4bda-9426-a58ef909ec1c"
+  }
 }

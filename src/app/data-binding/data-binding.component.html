@@ -1,0 +1,117 @@
+<!-- <section class="property-binding">
+
+  <<article>
+
+    <h3> Testando</h3>
+
+    <p> Segue meu facebook para as gatas: {{url}}</p>
+    <p> Testando interpolação de 1 + 1 é : {{1+1}}</p>
+    <p> o valor de 1+ 1 não é: {{1+1 + getValor()}}</p>
+
+    <p> Curso de Angular e gosto do curso: {{cursoAngular && getCurtirCurso()}}</p>
+
+  </article>
+
+  <article>
+    <h3>Property Binding</h3>
+    <img src="{{urlImagem}}">
+    <img [src]="urlImagem"> <--Property Binding
+    
+
+  </article> -->
+
+  <!-- <article>
+    <h3> Class e Style Binding</h3>
+
+    <div>
+      Selecione uma classe:
+
+      <select #classe (change)="0">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-success">Sucesso</option>
+
+      </select>
+    </div>
+      <br><br>
+     
+      <alert type="success">
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </alert>
+      <alert type="info">
+        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+      </alert>
+      <alert type="warning">
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+      </alert>
+      <alert type="danger">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+      </alert>
+
+
+  </article> -->
+
+
+  <!-- <article>
+
+    <h3>Event binding</h3>
+    <div>
+
+      <button (click)="botaoClicado()" class="btn btn-primary">Me Clique!
+
+      </button>
+
+      <br><br>
+
+      <input type="text"
+      (keyup)="onkeyUp($event)"
+      (keyup.enter)="salvarValor(campoInput.value)"
+      (blur)="salvarValor(campoInput.value)"
+      #campoInput />
+    
+
+      <p>Valor atual: {{valortAtual}}</p>
+      <p>Valor salvo: {{valorSalvo}}</p>
+
+    </div>
+
+
+  </article> -->
+
+<!-- </section> -->
+
+<section class="two-way-binding">
+
+  <article>
+
+    <h3>Two-way data binding</h3>
+
+    <div>
+
+
+      <input type="text"
+      [value]="nome"
+      (input)="nome = $event.target.value"/>
+
+
+      <input type="text"
+      [ngModel]="nome"
+      (ngModelChange)="nome = $event"/><br>
+      
+      
+      <input type="text" [(ngModel)]="pessoa.nome"/><br>
+      <input type="text" [(ngModel)]="pessoa.idade"/>
+      
+      <p>Você digitou: {{nome}}</p>
+      
+
+      
+      
+
+    </div>
+
+  </article>
+
+
+
+</section>
